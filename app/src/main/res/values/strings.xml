@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TableView Demo</string>
+    <string name="api">API</string>
+    <string name="cors">Cors</string>
+    <string name="http">HTTP</string>
+    <string name="category">Category</string>
+    <string name="auth">Auth</string>
+</resources>

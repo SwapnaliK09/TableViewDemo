@@ -1,6 +1,4 @@
 package com.example.tableviewdemo;
-
-
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
@@ -34,13 +32,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tb = findViewById(R.id.table_layout);
        GetAllData getAllData = new GetAllData();
        getAllData.execute();
-       tb.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-
-           }
-       });
-
 
     }
 
@@ -127,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv.setId(id);
         tv.setText(title.toUpperCase());
         tv.setTextColor(color);
-        tv.setPadding(40,40,40,40);
+        tv.setPadding(20,20,20,20);
         tv.setTypeface(Typeface.DEFAULT,typeface);
         tv.setBackgroundResource(bgColor);
         tv.setLayoutParams(getLayoutParams());
@@ -170,14 +161,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 TableRow.LayoutParams.WRAP_CONTENT,
                 TableRow.LayoutParams.WRAP_CONTENT);
         params.setMargins(1,1,1,1);
-        params.weight = 3;
+        params.weight = 4;
         return params;
     }
 
 
     private TableLayout.LayoutParams getTbLayoutParams() {
         return new TableLayout.LayoutParams(
-                TableRow.LayoutParams.MATCH_PARENT,
+                TableRow.LayoutParams.WRAP_CONTENT,
                 TableRow.LayoutParams.WRAP_CONTENT
         );
     }
